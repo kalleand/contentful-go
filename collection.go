@@ -28,7 +28,6 @@ type Collection struct {
 // NewCollection initilazies a new collection
 func NewCollection(options *CollectionOptions) *Collection {
 	query := NewQuery()
-	query.Order("sys.createdAt", true)
 
 	if options.Limit > 0 {
 		query.Limit(options.Limit)
